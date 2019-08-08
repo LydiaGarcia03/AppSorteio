@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i("CicloDeVida", "OnCreate" ); // Prova real de em que parte do ciclo de vida o code está
+        Log.i("CicloDeVida", "OnCreate"); // Prova real de em que parte do ciclo de vida o code está
         Toast.makeText(getApplicationContext(), "OnCreate", Toast.LENGTH_LONG).show();
     }
 
