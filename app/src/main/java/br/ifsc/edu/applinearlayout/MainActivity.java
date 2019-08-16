@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -71,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
     public void sortear(View view) {
         // Todo metodo do xml tem que receber uma view
         int numRandom = new Random().nextInt(101);
-        findViewById(R.id.txtNumRandom).setText(numRandom.toString);
+
+        TextView display = findViewById(R.id.txtNumRandom);
+        display.setText(numRandom);
 
         int numUser =  Integer.parseInt(((EditText) findViewById(R.id.txtNumUser)).getText().toString()) ;
 
